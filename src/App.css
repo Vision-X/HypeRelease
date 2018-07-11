@@ -1,0 +1,19 @@
+section {
+  min-height: 80vh;
+  max-width: 100vw;
+  background-color: gray;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+.card {
+  width: 32% !important;
+  flex-wrap: wrap !important;
+}
+
+img {
+  height: auto !important;
+}
