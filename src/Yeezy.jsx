@@ -1,10 +1,7 @@
 import React, { Fragment, Component } from 'react';
-import './App.css';
+// import ReleaseCard from './ReleaseCard';
 
-
-import ReleaseCard from './ReleaseCard';
-
-class App extends Component {
+class Yeezy extends Component {
   constructor() {
     super();
     this.state = {};
@@ -47,7 +44,7 @@ class App extends Component {
               </div>
               <img style={{height: "200px", width: "100%", display: "block", alt:"Card image"}} src={item.imgUrl}></img>
               <div className="card-body">
-                <a href="#" className="card-link">Purchase on Adidas.com</a>
+                <a href="#" className="card-link">Purchase on Nike.com</a>
                 <a href="#" className="card-link">Purchase on StockX</a>
               </div>
             </div>
@@ -60,4 +57,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default Yeezy;

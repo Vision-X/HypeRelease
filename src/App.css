@@ -4,14 +4,44 @@ section {
   background-color: gray;
   color: white;
   display: flex;
-  justify-content: space-around;
+  justify-content: left;
   flex-wrap: wrap;
   padding: 1rem;
 }
 
 .card {
-  width: 32% !important;
+  width: 30% !important;
   flex-wrap: wrap !important;
+  margin: 1.6%;
+  text-shadow: 2px 4px black;
+}
+
+.jumbotron {
+  /* height: 30vh !important; */
+  justify-content: center !important;
+  text-align: center !important;
+  background-image: url('./maxresdefault.jpg') !important;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-shadow: 2px 2px black;
+}
+
+.lead {
+  font-size: 28px !important;
+}
+
+.btn-warning {
+  color: white !important;
+}
+
+button a {
+  text-decoration: none !important;
+  color: white !important;
+}
+
+.routerNav button {
+  width: 100px !important;
+  margin: 0 1rem;
 }
 
 img {

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-export default class ReleaseCard extends Component {
+class ReleaseCard extends Component {
   render() {
     const { data } = this.props;
     return (
@@ -19,3 +19,5 @@ export default class ReleaseCard extends Component {
     )
   }
 }
+
+export default ReleaseCard;
