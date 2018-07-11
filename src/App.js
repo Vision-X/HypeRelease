@@ -44,8 +44,9 @@ class App extends Component {
               <div className="card-body">
                 <h5 className="card-title">Release Date:</h5>
                 <h6 className="card-subtitle text-muted">{item.relDate}</h6>
-                  <h5 className="card-title">Price:</h5>
-                  <h6 className="card-subtitle text-muted">{item.price} USD</h6>
+                <br />
+                <h5 className="card-title">Price:</h5>
+                <h6 className="card-subtitle text-muted">{item.price} USD</h6>
               </div>
               <img style={{height: "200px", width: "100%", display: "block", alt:"Card image"}} src={item.imgUrl}></img>
               <div className="card-body">
