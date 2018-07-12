@@ -8,7 +8,7 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: left;
-  min-height: 80vh;
+  min-height: 39vh;
   max-width: 100vw;
   padding: 1rem;
 }
@@ -97,7 +97,7 @@ img {
   }
 
   .contact-div {
-    width: 80%;
+    width: 80% !important;
     margin: 0 10% !important;
   }
 }
