@@ -59,5 +59,7 @@
 - [] render all sorted by date
 [] Colors?
 [] Cross-browser compatibility
+[] preload anything???
+[] asset reduction?
 [] manifest files for PWA
 [] google calendar / iCal integration for each Release
