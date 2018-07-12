@@ -11,6 +11,9 @@ import Yeezy from './Yeezy';
 import Jordan from './Jordan';
 import registerServiceWorker from './registerServiceWorker';
 
+import 'bootstrap';
+
+
 
 ReactDOM.render(
   <Router>
