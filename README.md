@@ -49,5 +49,15 @@
 [x] Link to StockX
 [XXX] Card header should be unique color!
 [XXX] Logos for buttons in Hero (JORDAN, ADIDAS)
-[FAIL] Import JS for bootstrap
-- [FAIL] verify that JS is working, ex. hamburger menu in mobile view...
+[x] Import JS for bootstrap
+- [x] verify that JS is working, ex. hamburger menu in mobile view...
+
+
+### Remaining fixes...
+[] Contact form
+[] normalize date data
+- [] render all sorted by date
+[] Colors?
+[] Cross-browser compatibility
+[] manifest files for PWA
+[] google calendar / iCal integration for each Release
