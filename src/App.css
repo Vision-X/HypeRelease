@@ -95,6 +95,11 @@ img {
     margin: 0 10%;
     width: 80vw;
   }
+
+  .contact-div {
+    width: 80%;
+    margin: 0 10% !important;
+  }
 }
 
 @media all and (max-width: 480px) {

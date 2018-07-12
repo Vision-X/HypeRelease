@@ -55,7 +55,7 @@
 
 ### Remaining fixes...
 [] Contact form
-[] normalize date data
+[] normalize Date data
 - [] render all sorted by date
 [] Colors?
 [] Cross-browser compatibility
