@@ -13,13 +13,6 @@ section {
   padding: 1rem;
 }
 
-.card {
-  flex-wrap: wrap !important;
-  margin: 1.6%;
-  text-shadow: 2px 2px black;
-  width: 30% !important;
-}
-
 .jumbotron {
   background-image: url('./maxresdefault.jpg') !important;
   background-position: center;
@@ -31,6 +24,13 @@ section {
 
 .jumbotron small {
   font-size: 1rem;
+}
+
+.card {
+  flex-wrap: wrap !important;
+  margin: 1.6%;
+  text-shadow: 2px 2px black;
+  width: 30% !important;
 }
 
 .lead {
@@ -72,16 +72,12 @@ img {
   width: 40vw;
 }
 
-
-
 @media all and (max-width: 980px) {
   .card {
     flex-wrap: wrap !important;
     margin: 1.4%;
     width: 47% !important;
-
   }
-
 }
 
 @media all and (max-width: 700px) {
