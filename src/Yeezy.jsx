@@ -1,37 +1,10 @@
 import React, { Fragment, Component } from 'react';
-// import ReleaseCard from './ReleaseCard';
 
 class Yeezy extends Component {
-  constructor() {
-    super();
-    this.state = {};
-  }
-
-  getData = () => {
-    let url = "https://webscraper-to-api.firebaseapp.com/output.json";
-    let dataGetter = response => {
-      let arr = [];
-      for (let key in response) {
-        arr.push(response[key]);
-      }
-      this.setState({ data: arr })
-      console.log(this.state.data);
-    }
-    return fetch(url)
-           .then(response => response.json())
-           .then(dataGetter)
-           .catch()
-  }
-
-  componentWillMount = () => {
-    this.getData();
-  }
-
   render() {
     return (
       <Fragment>
-        <section>
-          {(this.state.data && this.state.data.map(item => {
+          {(this.props.data && this.props.data.map(item => {
             return (
             <div className="card mb-3">
               <h3 className="card-header">{item.name}</h3>
@@ -45,13 +18,12 @@ class Yeezy extends Component {
               <img style={{height: "200px", width: "100%", display: "block", alt:"Card image"}} src={item.imgUrl}></img>
               <div className="card-body">
                 <a href="https://www.adidas.com/" target="_blank" className="card-link">Purchase on ADIDAS.com</a>
-                <a href="#" className="card-link">Purchase on StockX</a>
+                <a href="https://stockx.com/adidas/yeezy" target="_blank" className="card-link">Purchase on StockX</a>
               </div>
             </div>
             )
           })
         )}
-        </section>
       </Fragment>
     );
   }

@@ -30,3 +30,24 @@
 * Saving for new scraped data, likely new date formats we'll need to normalize b/t data sets
 - [x] Display all...
 - [] sorted by month of release/date of Release
+
+## TONIGHT's REFACTOR OBJECTIVE
+
+### Refactor wherever it needs it!
+
+[x] Leverage state in App.js and pass props to Yeez or Jordan
+- [x] Set up ShowAll, Yeezy and Jordan as components in App.js
+- [x] move jordan api fetch to the App.js methods
+- [x] pass state as props to those components
+[XXX] Build NavBar components
+- [-] Home (showall)
+- [-] Releases
+- [-] Contact
+- [-] About
+[x] Nav bar background color ?!?!? bootswatch
+[x] Fix text-shadow in card text
+[x] Link to StockX
+[XXX] Card header should be unique color!
+[XXX] Logos for buttons in Hero (JORDAN, ADIDAS)
+[FAIL] Import JS for bootstrap
+- [FAIL] verify that JS is working, ex. hamburger menu in mobile view...

@@ -1,8 +1,11 @@
 import React, { Fragment, Component } from 'react';
+import { Route } from 'react-router-dom';
+import ShowAll from './ShowAll';
+import Yeezy from './Yeezy';
+import Jordan from './Jordan';
+import Hero from './Hero';
+import Header from './Header';
 import './App.css';
-
-
-import ReleaseCard from './ReleaseCard';
 
 class App extends Component {
   constructor() {
@@ -18,7 +21,6 @@ class App extends Component {
         arr.push(response[key]);
       }
       this.setState({ data: arr })
-      console.log(this.state.data);
     }
     return fetch(url)
            .then(response => response.json())
@@ -26,35 +28,36 @@ class App extends Component {
            .catch()
   }
 
-  componentWillMount = () => {
+  getJordanData = () => {
+    let url = "https://webscraper-to-api.firebaseapp.com/jordans.json";
+    let dataGetter = response => {
+      let arr = [];
+      for (let key in response) {
+        arr.push(response[key]);
+      }
+      this.setState({ jData: arr });
+    }
+    return fetch(url)
+           .then(response => response.json())
+           .then(dataGetter)
+           .catch()
+  }
+
+  componentDidMount = () => {
     this.getData();
+    this.getJordanData();
   }
 
   render() {
     return (
       <Fragment>
-        <section>
-          {(this.state.data && this.state.data.map(item => {
-            return (
-            <div className="card mb-3">
-              <h3 className="card-header">{item.name}</h3>
-              <div className="card-body">
-                <h5 className="card-title">Release Date:</h5>
-                <h6 className="card-subtitle text-muted">{item.relDate}</h6>
-                <br />
-                <h5 className="card-title">Price:</h5>
-                <h6 className="card-subtitle text-muted">{item.price} USD</h6>
-              </div>
-              <img style={{height: "200px", width: "100%", display: "block", alt:"Card image"}} src={item.imgUrl}></img>
-              <div className="card-body">
-                <a href="#" className="card-link">Purchase on Adidas.com</a>
-                <a href="#" className="card-link">Purchase on StockX</a>
-              </div>
-            </div>
-            )
-          })
-        )}
-        </section>
+        <Header />
+        <Hero />
+          <section>
+            <Route exact path="/" render={() => <ShowAll data={this.state} />} />
+            <Route path="/yeezy" render={() => <Yeezy data={this.state.data} />} />
+            <Route path="/jordans" render={() => <Jordan data={this.state.jData} />} />
+          </section>
       </Fragment>
     );
   }

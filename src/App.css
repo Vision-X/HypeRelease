@@ -1,29 +1,36 @@
+.navbar-dark {
+  background-color: black !important;
+}
+
 section {
-  min-height: 80vh;
-  max-width: 100vw;
   background-color: gray;
   color: white;
   display: flex;
   justify-content: left;
   flex-wrap: wrap;
+  min-height: 80vh;
+  max-width: 100vw;
   padding: 1rem;
 }
 
 .card {
-  width: 30% !important;
   flex-wrap: wrap !important;
   margin: 1.6%;
-  text-shadow: 2px 4px black;
+  text-shadow: 2px 2px black;
+  width: 30% !important;
 }
 
 .jumbotron {
-  /* height: 30vh !important; */
-  justify-content: center !important;
-  text-align: center !important;
   background-image: url('./maxresdefault.jpg') !important;
   background-position: center;
   background-repeat: no-repeat;
+  justify-content: center !important;
+  text-align: center !important;
   text-shadow: 2px 2px black;
+}
+
+.jumbotron small {
+  font-size: 1rem;
 }
 
 .lead {
@@ -35,13 +42,13 @@ section {
 }
 
 button a {
-  text-decoration: none !important;
   color: white !important;
+  text-decoration: none !important;
 }
 
 .routerNav button {
-  width: 100px !important;
   margin: 0 1rem;
+  width: 100px !important;
 }
 
 img {
@@ -50,9 +57,9 @@ img {
 
 @media all and (max-width: 980px) {
   .card {
-    width: 47% !important;
     flex-wrap: wrap !important;
     margin: 1.4%;
+    width: 47% !important;
 
   }
 
@@ -60,19 +67,23 @@ img {
 
 @media all and (max-width: 700px) {
   .card {
-    width: 98% !important;
     flex-wrap: wrap !important;
     margin: 1%;
+    width: 98% !important;
   }
 }
 
 @media all and (max-width: 480px) {
   .routerNav button {
-    width: 80px !important;
     margin: 0 0.5rem;
+    width: 80px !important;
   }
 
   h1.display-3.text-warning {
     font-size: 3rem;
+  }
+
+  .lead {
+    font-size: 22px !important;
   }
 }
