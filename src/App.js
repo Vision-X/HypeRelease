@@ -5,6 +5,8 @@ import Yeezy from './Yeezy';
 import Jordan from './Jordan';
 import Hero from './Hero';
 import Header from './Header';
+import About from './About';
+import Contact from './Contact';
 import './App.css';
 
 class App extends Component {
@@ -57,6 +59,8 @@ class App extends Component {
             <Route exact path="/" render={() => <ShowAll data={this.state} />} />
             <Route path="/yeezy" render={() => <Yeezy data={this.state.data} />} />
             <Route path="/jordans" render={() => <Jordan data={this.state.jData} />} />
+            <Route path="/about" render={() => <About />} />
+            <Route path="/contact" render={() => <Contact />} />
           </section>
       </Fragment>
     );

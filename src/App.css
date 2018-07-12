@@ -55,6 +55,26 @@ img {
   height: auto !important;
 }
 
+.contact-div,
+.contact-div div {
+  display: flex !important;
+  flex-direction: column !important;
+  /* justify-content: center; */
+  align-items: center;
+  margin: 0 40% !important;
+}
+
+.about-div {
+  display: flex !important;
+  flex-direction: column !important;
+  /* justify-content: center; */
+  align-items: center;
+  width: 40vw;
+  margin: 0 30%;
+}
+
+
+
 @media all and (max-width: 980px) {
   .card {
     flex-wrap: wrap !important;
