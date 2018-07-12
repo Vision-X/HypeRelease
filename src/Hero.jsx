@@ -16,9 +16,9 @@ class Hero extends Component {
         <p className="lead">Use this to find all the release dates for new Yeezy Adidas shoes</p>
         <hr className="my-4" />
         <div className="routerNav">
-          <button type="button" className="btn btn-warning"><Link to="/yeezy" style={{ textDecoration: 'none' }}>Yeezys</Link></button>
-          <button type="button" className="btn btn-danger"><Link to="/jordans" style={{ textDecoration: 'none' }}>Jordans</Link></button>
-          <button type="button" className="btn btn-info"><Link to="/" style={{ textDecoration: 'none' }}>All</Link></button>
+          <Link to="/yeezy" style={{ textDecoration: 'none' }}><button type="button" className="btn btn-warning">Yeezys</button></Link>
+          <Link to="/jordans" style={{ textDecoration: 'none' }}><button type="button" className="btn btn-danger">Jordans</button></Link>
+          <Link to="/" style={{ textDecoration: 'none' }}><button type="button" className="btn btn-info">All</button></Link>
         </div>
       </div>
     )

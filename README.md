@@ -14,3 +14,19 @@
 [x] Fetch request for API data
 [x] Render data
 [x] Sort data by release date (wasnt needed, object came in that way - tis rare!!!)
+
+## TODAYS OBJECTIVES 7/11/2018
+
+### Set up layout for additional items/brands
+[x] React Router
+  - [x] npm install react-router-dom
+  - [x] setup Routes
+[x] Restyle landing to display all
+- [x] buttons for Router
+- [x] section for display all
+
+[x] Scrape new shoe data
+[x] Bring in new data to frontend
+* Saving for new scraped data, likely new date formats we'll need to normalize b/t data sets
+- [x] Display all...
+- [] sorted by month of release/date of Release

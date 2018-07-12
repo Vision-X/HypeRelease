@@ -47,3 +47,32 @@ button a {
 img {
   height: auto !important;
 }
+
+@media all and (max-width: 980px) {
+  .card {
+    width: 47% !important;
+    flex-wrap: wrap !important;
+    margin: 1.4%;
+
+  }
+
+}
+
+@media all and (max-width: 700px) {
+  .card {
+    width: 98% !important;
+    flex-wrap: wrap !important;
+    margin: 1%;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .routerNav button {
+    width: 80px !important;
+    margin: 0 0.8rem;
+  }
+
+  h1.display-3.text-warning {
+    font-size: 3rem;
+  }
+}
