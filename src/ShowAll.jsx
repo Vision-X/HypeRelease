@@ -1,5 +1,4 @@
 import React, { Fragment, Component } from 'react';
-// import ReleaseCard from './ReleaseCard';
 import Jordan from './Jordan';
 import Yeezy from './Yeezy';
 
@@ -21,8 +20,6 @@ class ShowAll extends Component {
 
 
   render() {
-    {console.log("yeezy data", this.props.data)}
-    {console.log("jordan data", this.props.jData)}
     return (
       <Fragment>
           {this.renderMe()}

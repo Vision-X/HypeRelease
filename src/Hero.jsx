@@ -4,10 +4,6 @@ import Jordan from './Jordan';
 import Yeezy from './Yeezy';
 
 class Hero extends Component {
-  constructor() {
-    super();
-  }
-
   render() {
     return (
       <div className="jumbotron">

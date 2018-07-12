@@ -5,7 +5,6 @@ class Jordan extends Component {
     return (
       <Fragment>
           {(this.props.data && this.props.data.map(item => {
-            {console.log(item)}
             return (
             <div className="card mb-3">
               <h3 className="card-header">{item.name}</h3>
