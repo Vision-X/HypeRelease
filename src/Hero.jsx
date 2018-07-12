@@ -14,7 +14,6 @@ class Hero extends Component {
         <h1 className="display-3 text-warning">HypeRelease</h1>
         <small className="text-info">version 0.1</small>
         <p className="lead">Use this to find all the release dates for new Yeezy Adidas and Nike Air Jordan sneakers.</p>
-        <hr className="my-4" />
         <div className="routerNav">
           <Link to="/yeezy" style={{ textDecoration: 'none' }}><button type="button" className="btn btn-warning">Yeezys</button></Link>
           <Link to="/jordans" style={{ textDecoration: 'none' }}><button type="button" className="btn btn-danger">Jordans</button></Link>
