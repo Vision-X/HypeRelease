@@ -2,6 +2,15 @@
   background-color: black !important;
 }
 
+.navbar-brand {
+  background-image: url('./favicon-256.png') !important;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 40px;
+  height: 40px !important;
+  width: 40px !important;
+}
+
 section {
   background-color: gray;
   color: white;
