@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 
 class About extends Component {
   render() {
@@ -15,7 +15,7 @@ class About extends Component {
           <br />
           View the repo here:
           <br />
-          <a href="https://www.github.com/Vision-X/HypeRelease">github</a>
+          <a href="https://www.github.com/Vision-X/HypeRelease" target="_blank" rel="noopener noreferrer">github</a>
         </p>
       </div>
     )

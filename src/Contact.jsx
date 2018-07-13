@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import ReactContactForm from 'react-mail-form';
 
 class Contact extends Component {

@@ -49,8 +49,8 @@
 - [x] Nav bar background color ?!?!? bootswatch
 - [x] Fix text-shadow in card text
 - [x] Link to StockX
-- [] Card header should be unique color!
-- [] Logos for buttons in Hero (JORDAN, ADIDAS)
+- [-] Card header should be unique color!
+- [-] Logos for buttons in Hero (JORDAN, ADIDAS)
 - [x] Import JS for bootstrap
   - [x] verify that JS is working, ex. hamburger menu in mobile view...
 
@@ -64,9 +64,9 @@
 - [x] asset reduction? lighthouse/canary test?
 - [x] manifest files for PWA
 
-
-- [] Cross-browser compatibility
-- [-] google calendar / iCal integration for each Release *   dates arent complete =(
-- [-] normalize Date data
-  - [-] render all sorted by date
+- [] Contact form in react (Kevin, Beerman)
+- [] Cross-browser compatibility (LuLz)
+- [] google calendar / iCal integration for each Release *   dates arent complete =(
+- [] normalize Date data
+  - [] render all sorted by date
 - [] Improve maxres photo type to JPEG 2000
