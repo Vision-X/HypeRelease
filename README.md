@@ -57,14 +57,16 @@
 
 ### Remaining fixes...
 - [x] import custom favicon
-- [] research PWA icons [default to favicon????]
-- [] Add image icon instead of header text
-- [] Contact form
-- [] normalize Date data
-  - [] render all sorted by date
-- [] Colors?
+- [x] research PWA icons [default to favicon????]
+- [x] Add image icon instead of header text
+- [x] Contact form
+- [x] preload anything???
+- [x] asset reduction? lighthouse/canary test?
+- [x] manifest files for PWA
+
+
 - [] Cross-browser compatibility
-- [] preload anything???
-- [] asset reduction? lighthouse/canary test?
-- [] google calendar / iCal integration for each Release * dates arent complete =(
-- [] manifest files for PWA
+- [-] google calendar / iCal integration for each Release *   dates arent complete =(
+- [-] normalize Date data
+  - [-] render all sorted by date
+- [] Improve maxres photo type to JPEG 2000
