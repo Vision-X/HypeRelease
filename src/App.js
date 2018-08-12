@@ -20,12 +20,12 @@ class App extends Component {
   };
 
   getJordanAndYeezyData = async () => {
-    let yeezyData = fetch(
+    let yeezyData = fetch (
       "https://webscraper-to-api.firebaseapp.com/output.json"
     ).then(result => {
       return result.json();
     });
-    let jordanData = fetch(
+    let jordanData = fetch (
       "https://webscraper-to-api.firebaseapp.com/jordans.json"
     ).then(result => {
       return result.json();
@@ -61,10 +61,12 @@ class App extends Component {
             path="/jordans"
             render={() => <Jordan data={this.state.jordanData} />}
           />
-          <Route path="/about"
+          <Route
+            path="/about"
             render={() => <About />}
           />
-          <Route path="/contact"
+          <Route
+            path="/contact"
             render={() => <Contact />}
           />
         </section>

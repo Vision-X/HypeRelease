@@ -12,7 +12,7 @@ class ShowAll extends Component {
         </Fragment>
       );
     } else {
-      return <p>Whats up, dog...?</p>;
+      return <p>Waiting on the database...</p>;
     }
   };
 
