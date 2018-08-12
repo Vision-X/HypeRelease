@@ -50,7 +50,9 @@ class App extends Component {
         <Header />
         <Hero />
         <section>
-          <Route exact path="/" render={() => <ShowAll data={this.state} />} />
+          <Route exact path="/"
+            render={() => <ShowAll data={this.state} />}
+          />
           <Route
             path="/yeezy"
             render={() => <Yeezy data={this.state.yeezyData} />}
@@ -59,8 +61,12 @@ class App extends Component {
             path="/jordans"
             render={() => <Jordan data={this.state.jordanData} />}
           />
-          <Route path="/about" render={() => <About />} />
-          <Route path="/contact" render={() => <Contact />} />
+          <Route path="/about"
+            render={() => <About />}
+          />
+          <Route path="/contact"
+            render={() => <Contact />}
+          />
         </section>
       </Fragment>
     );
