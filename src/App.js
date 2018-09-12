@@ -7,6 +7,9 @@ import Hero from "./Hero";
 import Header from "./Header";
 import About from "./About";
 import Contact from "./Contact";
+import { dataGetter } from './methods/dataGetter';
+import { jordanFetch } from './methods/jordanFetch';
+import { yeezyFetch } from './methods/yeezyFetch';
 import "./App.css";
 
 class App extends Component {
@@ -15,63 +18,47 @@ class App extends Component {
     this.state = {};
   }
 
-  componentDidMount = () => {
-    this.getJordanAndYeezyData();
-  };
-
-  getJordanAndYeezyData = async () => {
-    let yeezyData = fetch (
-      "https://webscraper-to-api.firebaseapp.com/output.json"
-    ).then(result => {
-      return result.json();
-    });
-    let jordanData = fetch (
-      "https://webscraper-to-api.firebaseapp.com/jordans.json"
-    ).then(result => {
-      return result.json();
-    });
+  getJordanAndYeezyData = async() => {
+    let yeezyData = yeezyFetch;
+    let jordanData = jordanFetch;
     Promise.all([yeezyData, jordanData]).then(data => {
-      let newData = data.map(this.dataGetter);
+      let newData = data.map(dataGetter);
       this.setState({ yeezyData: newData[0], jordanData: newData[1] });
     });
   };
 
-  dataGetter = shoe => {
-    let arr = [];
-    for (let key in shoe) {
-      arr.push(shoe[key]);
-    }
-    return arr;
+  componentDidMount = () => {
+    this.getJordanAndYeezyData();
   };
 
   render() {
-    return (
-      <Fragment>
-        <Header />
-        <Hero />
-        <section>
-          <Route exact path="/"
-            render={() => <ShowAll data={this.state} />}
-          />
-          <Route
-            path="/yeezy"
-            render={() => <Yeezy data={this.state.yeezyData} />}
-          />
-          <Route
-            path="/jordans"
-            render={() => <Jordan data={this.state.jordanData} />}
-          />
-          <Route
-            path="/about"
-            render={() => <About />}
-          />
-          <Route
-            path="/contact"
-            render={() => <Contact />}
-          />
-        </section>
-      </Fragment>
-    );
+      return (
+        <Fragment>
+          <Header />
+          <Hero />
+          <section>
+            <Route exact path="/"
+              render={() => <ShowAll data={this.state} />}
+            />
+            <Route
+              path="/yeezy"
+              render={() => <Yeezy data={this.state.yeezyData} />}
+            />
+            <Route
+              path="/jordans"
+              render={() => <Jordan data={this.state.jordanData} />}
+            />
+            <Route
+              path="/about"
+              render={() => <About />}
+            />
+            <Route
+              path="/contact"
+              render={() => <Contact />}
+            />
+          </section>
+        </Fragment>
+      );
   }
 }
 
